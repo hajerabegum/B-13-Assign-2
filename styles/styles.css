@@ -1,4 +1,4 @@
-/* --- Global Styles --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +37,9 @@ body {
     align-items: center;
 }
 
-.logo { font-size: 32px; font-weight: 800; }
+.logo {
+     font-size: 32px; 
+    font-weight: 800; }
 
 .nav-menu {
     display: flex;
@@ -54,10 +56,11 @@ body {
     transition: 0.3s;
 }
 
-.nav-btn-wrapper { text-align: right; }
+.nav-btn-wrapper { 
+    text-align: right; }
 
 .btn-gradient {
-    background: linear-gradient(47.64deg, #F7E93F 0%, #FB09B4 50%, #9100F8 100%);
+    background: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
     border: none;
     padding: 12px 28px;
     color: white;
@@ -70,7 +73,8 @@ body {
     transition: transform 0.2s;
 }
 
-.btn-gradient:hover { transform: scale(1.05); }
+.btn-gradient:hover { 
+    transform: scale(1.05); }
 
 /* --- Banner Section --- */
 .hero-wrapper {
@@ -120,8 +124,13 @@ body {
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 }
 
-.main-title { font-size: 56px; font-weight: 800; margin-bottom: 15px; }
-.sub-description { max-width: 550px; margin: 0 auto 40px; color: #B3B3B3; }
+.main-title { font-size: 56px; 
+    
+    font-weight: 800; 
+    margin-bottom: 15px; }
+.sub-description { max-width: 550px; 
+    margin: 0 auto 40px; 
+    color: #B3B3B3; }
 
 /* Banner Buttons */
 .banner-ctas {
@@ -130,16 +139,14 @@ body {
     gap: 20px;
 }
 
-.btn-icon { width: 20px; height: 20px; }
+.btn-icon { width: 20px;
+     height: 20px; }
 
 
 .btn-spotify {
-    background-color: #9100F8;
-    border: none;
-    color: white;
-    padding: 16px 32px;
+   
+
     border-radius: 30px;
-    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -193,7 +200,7 @@ body {
     line-height: 20px;
 }
 
-/* --- Stats Grid Desktop (Row) --- */
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -228,7 +235,6 @@ body {
 
 .features-grid {
     display: grid;
-    /* Creating a 3-column, 2-row grid for the 5-card layout */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 24px; 
@@ -437,6 +443,39 @@ body {
     transform: scale(1.2);
 }
 
+
+
+.platform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    
+}
+
+.platform-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0; 
+    padding: 0;
+}
+
+.platform-item img {
+    width: 24px; 
+    height: 24px;
+    object-fit: contain;
+}
+
+.platform-item span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
 .main-footer {
     padding: 100px 20px 40px;
     background-color: #0F0817;
@@ -462,38 +501,6 @@ body {
     margin-bottom: 50px;
 }
 
-
-.platform-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 60px;
-    
-}
-
-.platform-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 0; 
-    padding: 0;
-}
-
-.platform-item img {
-    width: 24px; /
-    height: 24px;
-    object-fit: contain;
-}
-
-.platform-item span {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
 .footer-divider {
     border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -506,55 +513,6 @@ body {
 }
 
 
-
-@media screen and (max-width: 576px) {
-    .platform-container {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-    
-    .footer-brand .logo {
-        font-size: 28px;
-    }
-}
-
-/* Platform Icons Grid/Row */
-.platform-icons {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 50px;
-}
-
-.platform-icons img {
-    width: 32px; 
-    height: auto;
-    transition: transform 0.3s ease;
-    opacity: 0.8;
-}
-
-.platform-icons img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-/* Divider & Copyright */
-.footer-divider {
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 30px;
-}
-
-.copyright-text {
-    color: #666666;
-    font-size: 14px;
-}
-
-.footer-links {
-    display: block;
-    margin-top: 10px;
-}
 
 
 
@@ -591,15 +549,15 @@ body {
     .menu-btn:checked ~ .nav-menu { left: 0; }
     
     .banner-ctas { flex-direction: column; align-items: center; }
-    .btn-spotify, .btn-outline { width: 100%; max-width: 300px; justify-content: center; }
-    .main-title { font-size: 42px; }
+    .btn-spotify, .btn-outline
+     { width: 100%;
+         max-width: 300px;
+          justify-content: center; }
+    .main-title { 
+        font-size: 42px; }
 
 
 
-     .stats-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 60px 20px;
-    }
     
     .section-title {
         font-size: 36px;
@@ -608,16 +566,8 @@ body {
       .why-choose {
         padding: 80px 40px;
     }
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 Column grid for tablet */
-    }
-    .tall-card, .wide-card {
-        grid-column: span 2; /* Make them full width to balance the 2-col grid */
-        grid-row: span 1;
-    }
-     .episodes-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+   
+  
      .host-card-layout {
         flex-direction: column; 
         padding: 40px;
@@ -653,10 +603,11 @@ body {
         padding: 60px 20px;
     }
     .features-grid {
-        grid-template-columns: 1fr; /* Exact requirement: Single column */
+        grid-template-columns: 1fr; 
     }
     .tall-card, .mobile-card,.global-card,.wide-card,.resource-card {
         grid-column: span 1;
+        grid-row: span 1;
     }
 
    
@@ -682,7 +633,15 @@ body {
     .host-card-layout {
         padding: 30px 20px;
     }
-
+    .footer-brand .logo {
+        font-size: 28px;
+    }
+    .platform-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
    
 
     
