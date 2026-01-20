@@ -161,6 +161,68 @@ body {
     cursor: pointer;
 }
 
+
+
+
+.about-section {
+    padding: 50px 20px 120px; 
+    background-color: #0F0817;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-header {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.section-desc {
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+/* --- Stats Grid Desktop (Row) --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-top: 80px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 900; 
+    color: #00FF88; 
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #B3B3B3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+
+
 /* --- Mobile Logic  --- */
 .menu-btn, .hamburger { display: none; }
 
@@ -196,9 +258,33 @@ body {
     .banner-ctas { flex-direction: column; align-items: center; }
     .btn-spotify, .btn-outline { width: 100%; max-width: 300px; justify-content: center; }
     .main-title { font-size: 42px; }
+
+
+
+     .stats-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 60px 20px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .circle-glow { width: 260px; height: 260px; }
     .mic-img { width: 90px; }
+ .about-section {
+        padding: 50px 20px 80px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr; 
+        padding-top: 40px;
+    }
+
+    .stat-number {
+        font-size: 40px;
+    }
+
 }
