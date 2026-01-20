@@ -22,9 +22,7 @@ body {
 .navbar {
     background-color: #1A0B2E; 
     border-bottom: 1px solid rgba(65, 37, 103, 1);
-    position: sticky;
     top: 0;
-    z-index: 1000;
     height: 92px;
     display: flex;
     align-items: center;
@@ -221,6 +219,343 @@ body {
 
 
 
+/* --- Why Choose Section Styles --- */
+.why-choose {
+    padding: 120px 200px; 
+    background-color: #0F0817;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    /* Creating a 3-column, 2-row grid for the 5-card layout */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px; 
+    margin-top: 60px;
+}
+
+.feature-card {
+    background: rgba(53, 17, 101, 0.4); 
+    border-radius: 40px;
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+
+.tall-card {
+    grid-row: span 2; 
+}
+
+.mobile-card{
+    grid-column: span 2; 
+}
+.global-card{
+     grid-column: span 2; 
+}
+
+.wide-card {
+    grid-column: span 2; 
+}
+.resource-card{
+    grid-column: span 1;
+}
+
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+}
+
+.feature-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.feature-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #B3B3B3;
+}
+
+
+.episodes-section {
+    padding: 100px 20px;
+    background-color: #0F0817;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    color: #FFFFFF;
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.episode-card {
+    background-color: #1A0B2E; 
+    border-radius: 24px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.episode-card:hover {
+    transform: translateY(-8px);
+    border-color: #00FF88;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.episode-content {
+    padding: 24px;
+}
+
+.episode-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.episode-desc {
+    font-size: 14px;
+    color: #B3B3B3;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.episode-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.duration-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00FF88;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.footer-icon-img {
+    width: 20px;
+    height: 20px;
+}
+
+.host-section {
+    padding: 120px 20px;
+    background-color: #0F0817;
+    text-align: center;
+}
+
+.host-card-layout {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: rgba(53, 17, 101, 0.4); 
+    border-radius: 40px;
+    padding: 50px; 
+    max-width: 1100px;
+    margin: 60px auto 0;
+    gap: 50px;
+}
+
+.host-image-box {
+    flex: 1;
+    max-width: 400px;
+}
+
+.host-img-main {
+    width: 100%;
+    border-radius: 30px; 
+    display: block;
+}
+
+.host-text-box {
+    flex: 1.2;
+    text-align: left;
+}
+
+.host-name {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.host-bio {
+    font-size: 16px;
+    color: #B3B3B3;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.host-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.host-socials img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease; 
+}
+
+.host-socials img:hover {
+    transform: scale(1.2);
+}
+
+.main-footer {
+    padding: 100px 20px 40px;
+    background-color: #0F0817;
+    background-image: url('../assets/footer-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-brand .logo {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.footer-tagline {
+    color: #B3B3B3;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+
+.platform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    
+}
+
+.platform-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0; 
+    padding: 0;
+}
+
+.platform-item img {
+    width: 24px; /
+    height: 24px;
+    object-fit: contain;
+}
+
+.platform-item span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.copyright-text {
+    color: #666666;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .platform-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .footer-brand .logo {
+        font-size: 28px;
+    }
+}
+
+/* Platform Icons Grid/Row */
+.platform-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.platform-icons img {
+    width: 32px; 
+    height: auto;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+}
+
+.platform-icons img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Divider & Copyright */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.copyright-text {
+    color: #666666;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: block;
+    margin-top: 10px;
+}
+
 
 
 /* --- Mobile Logic  --- */
@@ -269,6 +604,34 @@ body {
     .section-title {
         font-size: 36px;
     }
+    
+      .why-choose {
+        padding: 80px 40px;
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Column grid for tablet */
+    }
+    .tall-card, .wide-card {
+        grid-column: span 2; /* Make them full width to balance the 2-col grid */
+        grid-row: span 1;
+    }
+     .episodes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .host-card-layout {
+        flex-direction: column; 
+        padding: 40px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .host-text-box {
+        text-align: center;
+    }
+
+    .host-socials {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -286,5 +649,42 @@ body {
     .stat-number {
         font-size: 40px;
     }
+     .why-choose {
+        padding: 60px 20px;
+    }
+    .features-grid {
+        grid-template-columns: 1fr; /* Exact requirement: Single column */
+    }
+    .tall-card, .mobile-card,.global-card,.wide-card,.resource-card {
+        grid-column: span 1;
+    }
+
+   
+    .feature-card {
+        padding: 30px;
+        border-radius: 30px;
+    }
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+      .host-section {
+        padding: 80px 15px;
+    }
+
+    .host-name {
+        font-size: 32px;
+    }
+
+    .host-card-layout {
+        padding: 30px 20px;
+    }
+
+   
+
+    
 
 }
